@@ -17,6 +17,7 @@
     {{ View::make('header')}}
     @yield('content')
     {{ View::make('footer')}}
+    
 </body>
 <style>
     .custom-login{
@@ -29,9 +30,12 @@
     }
     .custom-product{
         height: 600px;
+        padding-right: 0%;
+        padding-left: 10%;
+        
     }
     .slider-text{
-        background-color: rgb(129, 155, 155) !important;
+        background-color: rgba(10, 10, 10, 0.089) !important;
     }
     .trending-img{
         height: 100px;
@@ -53,6 +57,14 @@
         border-bottom: 1px solid #cccccc;
         margin-bottom: 20px;
         padding bottom: 20px;
+    }
+    .link_color{
+        color: #cccccc;
+    }
+    .list_size{
+        padding-left: 1%;
+        padding-right: 80%;
+        padding-top: 0%;
     }
 </style>
 </html>

@@ -1,7 +1,7 @@
 @extends('master')
 @section('content')
 
-<div class="custom-product">
+<div class="container custom-product">
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
             <ol class="carousel-indicators">
@@ -15,7 +15,7 @@
             <!-- Wrapper for slides -->
             <div class="carousel-inner">
               @foreach ($products as $item)
-              <div class="item {{$item['id']==2?'active':''}} ">
+              <div class="item {{$item['id']==1?'active':''}} ">
                 <a href="detail/ {{$item['id']}} ">
                   <img class="slider-img" src=" {{$item['gallery']}} ">
                 <div class="carousel-caption slider-text">
